@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <title>Frontend Mentor | NFT preview card component</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        position: relative;
+        font-size: 0.8rem;
+        text-align: center;
+        top : 95vh;
+      }
+      .attribution a {
+        color: hsl(233, 14%, 89%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="hero-container">
+        <section class="image-container">
+          <img
+            id="first-image"
+            src="./images/image-equilibrium.jpg"
+            alt="nft"
+          />
+          <section class="overlay">
+            <img src="./images/icon-view.svg" alt="view svg" />
+          </section>
+          
+        </section>
+        <section class="text-container">
+          <h3>Equilibrium #3429</h3>
+          <p id="info">Our Equilibrium collection promotes balance and calm.</p>
+          <section class="val-time">
+            <section class="one">
+              <img src="./images/icon-ethereum.svg" alt="svg icon" />
+              <p class="details">0.041 ETH</p>
+            </section>
+            <section class="two">
+              <img src="./images/icon-clock.svg" alt="clock icon" />
+              <p class="details">3 days left</p>
+            </section>
+
+            <hr />
+            <section class="creator">
+              <img src="./images/image-avatar.png" alt="avatar image" />
+              <p>Creation of <span id="diferent">Jules Wyvern</span></p>
+            </section>
+          </section>
+        </section>
+      </section>
+    </main>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/MoonlightAndStars" target="_blank" rel="noopener">MoonlightAndStars</a>.
+    </div>
+  </body>
+</html>
