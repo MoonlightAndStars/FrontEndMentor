@@ -18,7 +18,6 @@
 .hero-container {
     background-color: var(--grey-900);
     min-height: 100vh;
-    padding : 3em;
 }
 
 .hero-section {
@@ -35,6 +34,9 @@
     gap : 1em;
     border-radius: 17px;
     margin-block-end: 1em;
+    position: fixed;
+    inset: 0;
+    margin: auto;
 }
 
 .display-pic {
