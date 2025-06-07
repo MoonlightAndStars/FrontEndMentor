@@ -136,7 +136,7 @@
 @media (prefers-reduced-motion: reduce) {
     .link-buttons,
     .display-pic {
-      transition: none !important;
-      transform: none !important;
+      transition: none;
+      transform: none;
     }
   }
