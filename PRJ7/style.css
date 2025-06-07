@@ -132,3 +132,146 @@
         font-size: 0.75rem;
     }
 }
+
+:root {
+    --green-color: hsl(75, 94%, 57%);
+    --white-color: hsl(0, 0%, 100%);
+    --grey-700: hsl(0, 0%, 20%);
+    --grey-800: hsl(0, 0%, 12%);
+    --grey-900: hsl(0, 0%, 8%);
+    --inter-font : 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--inter-font);
+    color: var(--white-color);
+}
+
+.hero-container {
+    background-color: var(--grey-900);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section {
+    display: flex;
+    max-width: 20em;
+    max-height: 80vh;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--grey-800);
+    margin-inline: auto;
+    padding: 2em;
+    gap : 1em;
+    border-radius: 17px;
+}
+
+.display-pic {
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    box-shadow: 0 0 3px 3px;
+    transition: transform 1s ease-in-out;
+    transform-style: preserve-3d;
+
+}
+
+.user-name {
+    font-size: 1.4rem;
+}
+
+.user-location {
+    font-size: 0.8rem;
+    color: var(--green-color);
+}
+
+.user-description {
+    font-size: 0.7rem;
+}
+
+
+.social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.link-buttons {
+    width: 100%;
+    padding: 1em 5em;
+    background-color: var(--grey-700);
+    text-align: center;
+    font-size: 0.8rem;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 12px;
+    transition: transform 1s ease;
+    transform-style: preserve-3d;
+}
+
+.link-buttons:hover {
+  transform: scale(1.05);
+  background-color: var(--green-color);
+  color: var(--grey-900);
+  outline: 2px solid black;
+  cursor: pointer;
+}
+
+.link-buttons:focus-visible {
+    outline: 3px dashed var(--green-color);
+  }
+
+
+.display-pic:hover {
+    transform: rotateY(360deg);
+}
+
+@media (max-width : 33.75em){
+    .hero-container {
+        padding: 5em 1em;
+        margin-inline: auto;
+        max-width: 100%;
+    
+    }
+}
+
+@media (max-width : 28.125em) {
+    .user-description {
+        font-size: 0.8rem;
+        text-align: center;
+        margin: 0 0.5em;
+    }
+}
+
+@media (max-width : 21.25em) {
+    .social-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap : 0.5em;
+        justify-content: center;
+        max-width: 200px;
+        padding : unset;
+    }
+    .link-buttons {
+        padding: 0.6em 0.8em;
+        border-radius: 8px;
+        font-size: 0.75rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .link-buttons,
+    .display-pic {
+      transition: none !important;
+      transform: none !important;
+    }
+  }
