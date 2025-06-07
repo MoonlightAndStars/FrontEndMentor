@@ -36,7 +36,6 @@
     padding: 2em;
     gap : 1em;
     border-radius: 17px;
-    margin-block-end: 1em;
 }
 
 .display-pic {
@@ -80,7 +79,7 @@
     text-decoration: none;
     font-weight: 600;
     border-radius: 12px;
-    transition: transform 1s ease;
+    transition: transform 0.3s ease;
     transform-style: preserve-3d;
 }
 
