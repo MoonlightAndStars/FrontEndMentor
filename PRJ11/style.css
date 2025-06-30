@@ -1,0 +1,127 @@
+:root {
+    --clr-primary: hsl(158, 36%, 37%);
+    --clr-primary-dark: hsl(158, 42%, 18%);
+    --clr-neutral-dark: hsl(212, 21%, 14%);
+    --clr-neutral-light: hsl(0, 0%, 100%);
+    --clr-neutral-gray: hsl(226, 6%, 54%);
+    --clr-background: hsl(30, 38%, 92%);
+  
+    --font-body: "Montserrat", sans-serif;
+    --font-heading: "Fraunces", serif;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: var(--font-body);
+    background-color: var(--clr-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 1.5rem;
+  }
+  
+  .card {
+    background: var(--clr-neutral-light);
+    border-radius: 0.75rem;
+    overflow: hidden;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card__image img {
+    width: 100%;
+    display: block;
+  }
+  
+  .card__content {
+    padding: 1.5rem;
+  }
+  
+  .card__category {
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    color: var(--clr-neutral-gray);
+    font-size: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .card__title {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    color: var(--clr-neutral-dark);
+    margin-bottom: 1rem;
+    line-height: 1.1;
+  }
+  
+  .card__description {
+    font-size: 0.9rem;
+    color: var(--clr-neutral-gray);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  
+  .card__pricing {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .card__price--current {
+    font-size: 2rem;
+    font-family: var(--font-heading);
+    color: var(--clr-primary);
+  }
+  
+  .card__price--original {
+    text-decoration: line-through;
+    color: var(--clr-neutral-gray);
+    font-size: 0.9rem;
+  }
+  
+  .card__button {
+    background: var(--clr-primary);
+    color: var(--clr-neutral-light);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card__button:hover {
+    background: var(--clr-primary-dark);
+  }
+  
+  /* Desktop Layout */
+  @media (min-width: 600px) {
+    .card {
+      flex-direction: row;
+    }
+  
+    .card__image,
+    .card__content {
+      flex: 1;
+    }
+  
+    .card__image img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  
