@@ -9,6 +9,10 @@
     --font-body: "Montserrat", sans-serif;
     --font-heading: "Fraunces", serif;
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
   
   *,
   *::before,
@@ -32,7 +36,7 @@
     background: var(--clr-neutral-light);
     border-radius: 0.75rem;
     overflow: hidden;
-    max-width: 600px;
+    max-width: 37.5rem;
     display: flex;
     flex-direction: column;
   }
@@ -109,7 +113,7 @@
   }
   
   /* Desktop Layout */
-  @media (min-width: 600px) {
+  @media (min-width: 37.5rem) {
     .card {
       flex-direction: row;
     }
@@ -125,3 +129,12 @@
     }
   }
   
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
