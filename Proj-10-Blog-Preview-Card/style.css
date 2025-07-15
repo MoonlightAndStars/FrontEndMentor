@@ -32,7 +32,6 @@
   box-shadow: 5px 5px 1px 1px var(--gray-950);
   background-color: var(--white);
   margin: auto;
-    scale : 0.9;
 }
 
 .image-container {
@@ -106,7 +105,6 @@
 @media (min-width: 745px) {
   .container {
     max-width: 350px;
-    scale : 0.8
   }
 
   .image-container {
