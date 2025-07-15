@@ -20,6 +20,7 @@
   padding: 2em 1em;
   min-height: 100vh;
   display: flex;
+
 }
 
 .container {
@@ -31,6 +32,7 @@
   box-shadow: 5px 5px 1px 1px var(--gray-950);
   background-color: var(--white);
   margin: auto;
+    scale : 0.9;
 }
 
 .image-container {
@@ -104,9 +106,14 @@
 @media (min-width: 745px) {
   .container {
     max-width: 350px;
+    scale : 0.8
   }
 
   .image-container {
     max-width: 330px;
   }
+  .profile-image-container {
+  width: 40px;
+  height: 40px;
+}
 }
